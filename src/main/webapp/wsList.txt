@@ -1,0 +1,31 @@
+elo/team/showall : <noArgs> : Affiche toutes les teams
+
+elo/player/showall : <noArgs> : Affiche tous les joueurs
+
+elo/matchtypes : <noArgs> : Affiche la liste des types de scores Elo
+
+/elo/player : 	
+		name (M) : nom du joueur
+		elo : elo du joueur 
+		eloType : type du elo fourni
+		save : si il faut sauvegarder le joueur
+		delete : si il faut supprimer le joueur
+					: Renvoie le nom, le elo, le type de elo, si il faut sauvegarder ou supprimer le joueur
+ 
+/elo/team : 	
+		name : nom complet de la team
+		tag (M) : tag de la team
+		teamleader : nom du teamleader
+		members : nom des membres
+		createplayers : si il faut créer un joueur
+		save : si il faut sauvegarder la team
+		delete : si il faut delete la team
+				: Renvoie le nom, le tag, le nom du teamleader, le nom des membres, si il faut créer un joueur,  si il faut sauvegarder ou supprimer la team
+
+/elo/match : 	
+		winnerList(M) : liste des joueurs vainqueurs
+		looserList(M) : liste des joueurs vaincus
+		score(M) : score du match
+		createPlayers : si il faut créer des joueurs
+		typeMatch : type du match (5v5 ou 2v2)
+ 				: Renvoie la liste des vainqueurs, la liste des vaincus, le score, le type du match, si il faut créer des joueurs

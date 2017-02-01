@@ -1,0 +1,28 @@
+
+html, body {
+    width: 100%;
+}
+
+table
+{
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+    text-align: center;
+    height: 35px;
+}
+
+
+input {
+	width: 40px;
+	text-align: center;
+}
+
+th img,
+td img{
+	width:20px;
+}
